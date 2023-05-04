@@ -33,17 +33,6 @@ menu = {
     ],
 }
 
-mensajes=[
-    "Esta bien, vuelve cuando quieras",
-    "Eso no esta en las opciones",
-    "Vuelva pronto"
-    "Escribe la letra: "
-]
-
-mensajes_error=[
-    "Solo un caracter"
-]
-
 # Clases
 class Pedido:
     """Clase Principal"""
@@ -223,6 +212,8 @@ class Pedido:
         mostrar_precio("Subtotal", sumar_precios)
         mostrar_precio("IGV", igv)
         mostrar_precio("Total", total)
+        print("|" + " " * 46 + "|")
+        print("|" + " " * 12 + "Gracias por  su compra" + " " * 12 + "|")
         print("|" + "_" * 46 + "|")
         print()
 
